@@ -28,7 +28,7 @@ namespace ProductionSpeed
             context = this;
             modEnabled = Config.Bind<bool>("General", "Enabled", true, "Enable this mod");
             isDebug = Config.Bind<bool>("General", "IsDebug", true, "Enable debug logs");
-            speedMult = Config.Bind<float>("Options", "SpeedMult", 2, "Speed multiplier");
+            speedMult = Config.Bind<float>("Options", "SpeedMult", 5, "Speed multiplier");
 
             Harmony.CreateAndPatchAll(Assembly.GetExecutingAssembly(), null);
 
