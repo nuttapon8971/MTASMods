@@ -27,7 +27,7 @@ namespace ProductionCost
             context = this;
             modEnabled = Config.Bind<bool>("General", "Enabled", true, "Enable this mod");
             isDebug = Config.Bind<bool>("General", "IsDebug", true, "Enable debug logs");
-            costMult = Config.Bind<float>("Options", "CostMult", 0.5f, "Cost multiplier");
+            costMult = Config.Bind<float>("Options", "CostMult", 5f, "Cost multiplier");
 
             Harmony.CreateAndPatchAll(Assembly.GetExecutingAssembly(), null);
 
